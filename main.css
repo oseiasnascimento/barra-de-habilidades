@@ -1,0 +1,100 @@
+*{  margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html,body { height: 100%;}
+
+/* Container Principal */
+.container-status{
+    box-sizing: border-box;
+    width: 95%;
+    height: auto;
+    max-width: 700px;
+    box-shadow: 1px 1px 10px rgb(163, 163, 163);
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+/* Elemento "Sombra" da barra */
+.container-status .sd-bar{
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    background-color: rgb(219, 219, 219);
+    margin: 5px 0;
+}
+
+/* Preenchimento da barra */
+.container-status .sd-bar .cnt-bar{
+    height: 100%;
+    border-radius: 20px;
+    animation-duration: 1.3s;
+    
+}
+
+
+.cnt-azul{
+    width: 30%;
+    animation: SwideBar_cntAzul;
+    background-color: rgb(102, 102, 240); 
+}
+
+.cnt-verde{
+    width: 45%;
+    animation: SwideBar_cntVerde;
+    background-color: rgb(40, 226, 133); 
+}
+
+.cnt-vermelho{
+    width: 60%;
+    animation: SwideBar_cntVermelho;
+    background-color: rgb(243, 101, 101); 
+}
+
+
+/* Animacões de cada elemento */
+@keyframes SwideBar_cntAzul{
+    0%{
+        width: 0%;
+        opacity: 0%;
+    }
+    80%{
+        width: 36%;
+    }
+    100%{
+        opacity: 100%;
+        width: 30%;
+    }
+}
+
+
+@keyframes SwideBar_cntVerde{
+    0%{
+        width: 0%;
+        opacity: 0%;
+    }
+    80%{
+        width: 50%;
+    }
+    100%{
+        opacity: 100%;
+        width: 45%;
+    }
+}
+
+
+@keyframes SwideBar_cntVermelho{
+    0%{
+        width: 0%;
+        opacity: 0%;
+    }
+    80%{
+        width: 70%;
+    }
+    100%{
+        opacity: 100%;
+        width: 60%;
+    }
+}
