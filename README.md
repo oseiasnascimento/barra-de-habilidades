@@ -1,3 +1,3 @@
 # barra-de-habilidades
 
-Projeto desenvolvido para impelentação no portifólio de um amigo.
+Projeto desenvolvido para ser implementado no portifólio de um amigo.
